@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./dz41.js"></script>
+</head>
+
+<body>
+   
+    <div>
+        <form id="forma" onsubmit="return false">
+            <p> Задайте відрізок для обчислення всіх парних і непарних чисел (аргументи функції):
+
+                <input id="inputProm" type="string" required>
+                        </p>
+            <button type="submit" onclick="obchFromTo()">Кількість непарних</button>
+        </form>
+
+        <table>
+            <tr>
+                <td>
+                    <p>Кількість парних = </p>
+                </td>
+                <td>
+                    <p id="pp3" , parn></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Кількість непарних = </p>
+                </td>
+                <td>
+                    <p id="nn3" , neparn></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <form id="forma" onsubmit="return false">
+            <p>Введіть числа (+/- 10 штук):
+
+                <input id="ki" type="string" required>
+            </p>
+
+            <button type="submit" onclick=" sumArg() ">Сума чисел (якщо < 10)</button>
+        </form>
+
+        <table>
+            <tr>
+                <td>
+                    <p>Результат: </p>
+                </td>
+                <td>
+                    <p id="sto10" , sss></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+   
+    
+    <div>
+        <form id="forma" onsubmit="return false">
+            <p>Обчислення факторіалу. Введіть число:
+
+                <input id="inpf" type="number" required>
+            </p>
+
+            <button type="submit" onclick="obchFactorial()">Обчислити факторіал</button>
+        </form>
+
+        <table>
+            <tr>
+                <td>
+                    <p>Факторіал числа = </p>
+                </td>
+                <td>
+                    <p id="r4" , arr></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <form id="forma" onsubmit="return false">
+            <p>Опрацювання масиву чисел. Введіть числа:
+
+                <input id="ni" type="string" required>
+            </p>
+
+            <button type="submit" onclick="sortArray()">Сортувати масив чисел за допомогою методу “бульбашка”</button>
+        </form>
+
+        <table>
+            <tr>
+                <td>
+                    <p>Результат сортування: </p>
+                </td>
+                <td>
+                    <p id="rr3" , arr></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
