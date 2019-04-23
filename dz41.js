@@ -71,10 +71,8 @@ function sumArg() {
       //let argum = 0;
       //let arr = document.getElementById('ni').value.split(",").map(Number);
       for (let i = 0; i < list.length; i++) {
-        console.log("елемент на поточному кроці", list[i]);
+        console.log("сума на поточному кроці", list[i])
         sum += list[i];
-        console.log("сума на поточному кроці", sum);
-
       }
       document.getElementById('sto10').innerHTML = sum;
       console.log("сума всіх чисел = ", sum);
