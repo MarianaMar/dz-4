@@ -5,13 +5,13 @@ function obchFromTo() {
   let parametr = document.getElementById('inputProm').value.split(",").map(Number);
   console.log(parametr);
 
-  if (parametr.length !== 2 ||  parametr.length === 0) {
+  if (parametr.length !== 2 || parametr.length === 0) {
     console.log("введіть коректні проміжки (2 числа:...від...до...)");
     alert("введіть коректні проміжки, 2 числа через кому (...від...до...)");
     document.getElementById('nn3').innerHTML = 0;
     document.getElementById('pp3').innerHTML = 0;
   }
-  else if (parametr[0] >= parametr[1] ) {
+  else if (parametr[0] >= parametr[1]) {
     console.log("перше число більше за друге!! (:...від...до...)");
     alert("перше число має бути менше за друге (...від...до...)");
     document.getElementById('nn3').innerHTML = 0;
@@ -30,7 +30,7 @@ function parnNeParn(from, to) {
   let parn = 0;
   let neparn = 0;
   for (let i = from; i <= to; i++) {
-    if (i % 2 === 0) {
+    if ( i % 2 === 0) {
       parn++;
     }
     else {
@@ -51,13 +51,13 @@ function sumArg() {
   const list = document.getElementById('ki').value.split(",").map(Number);
   console.log(list);
   let kilkist = 0;
- kilkist = list.length;
+  kilkist = list.length;
 
-   if (kilkist === 0) {
-    alert ('введіть числа!');
-    console.log ("введіть числа!!!");
+  if (kilkist === 0) {
+    alert('введіть числа!');
+    console.log("введіть числа!!!");
     document.getElementById('sto10').innerHTML = 0;
-   } else if (kilkist > 10) {
+  } else if (kilkist > 10) {
     console.log("Результат =", list);
     sum = list;
     document.getElementById('sto10').innerHTML = sum;
@@ -71,10 +71,8 @@ function sumArg() {
       //let argum = 0;
       //let arr = document.getElementById('ni').value.split(",").map(Number);
       for (let i = 0; i < list.length; i++) {
-        console.log("елемент на поточному кроці", list[i]);
+        console.log("сума на поточному кроці", list[i])
         sum += list[i];
-        console.log("сума на поточному кроці", sum);
-
       }
       document.getElementById('sto10').innerHTML = sum;
       console.log("сума всіх чисел = ", sum);
